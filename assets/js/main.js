@@ -1,4 +1,6 @@
 var pimg = document.getElementById("kep")
+var szo = document.getElementById("felirat")
+var sza = document.getElementById("sorszam")
 
 function PoloSzin()
 {
@@ -28,4 +30,10 @@ function PoloSzin()
         pimg.src = "assets/images/polo-piros.png"
         pimg.style = "filter: grayscale(100%);"
     }
+}
+
+function PoloFelirat()
+{
+    szo.innerHTML = document.getElementById("feliratszov").value
+    szo.style = "text-transform: uppercase"
 }
