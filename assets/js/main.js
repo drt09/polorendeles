@@ -34,6 +34,11 @@ function PoloSzin()
 
 function PoloFelirat()
 {
+    var szavalue = document.getElementById("feliratszam").value
     szo.innerHTML = document.getElementById("feliratszov").value
     szo.style = "text-transform: uppercase"
+    if (szavalue >= 1 && szavalue < 100 )
+    {
+        sza.innerHTML = szavalue
+    }
 }
